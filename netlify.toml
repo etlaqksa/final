@@ -1,0 +1,11 @@
+[build]
+  # مسار مجلد البناء (build directory) لجهة العميل
+  publish = "dist/public"
+  # أمر البناء (build command)
+  command = "pnpm install && pnpm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
